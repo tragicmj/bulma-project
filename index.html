@@ -89,7 +89,19 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
               amet.
             </p>
-            <button class="button is-primary">Add to Cart</button>
+            <form action="#">
+              <div class="field">
+                <div class="control mb-5">
+                  <div class="select is-dark">
+                    <select>
+                      <option value="">Small (250gm)</option>
+                      <option value="">Large (500gm)</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <button class="button is-primary">Add to Cart</button>
+            </form>
           </div>
         </div>
       </div>
@@ -143,7 +155,7 @@
                   Perspiciatis nobis dolorum corrupti recusandae quas.
                 </p>
                 <div class="has-text-centered">
-                  <button class="button mt-4 mb-2">Sign Up</button>
+                  <button class="button mt-4 mb-2" id="signup">Sign Up</button>
                 </div>
               </div>
             </div>
@@ -214,6 +226,47 @@
         </div>
       </div>
     </section>
+
+    <!-- modal -->
+    <div class="modal">
+      <div class="modal-background">
+      </div>
+      <div class="modal-content has-background-white p-5">
+        <h3 class="title mb-5">Join the Club</h3>
+        <form action="#">
+          <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input type="text" name="" id="" class="input" placeholder="Name" />
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+              <input type="email" name="" id="" class="input" placeholder="Email" />
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <label class="checkbox">
+                <input type="checkbox" name="" id="" class="mr-2">
+                I agree to the <a href="#">Terms & Conditions</a>
+              </label>
+            </div>
+          </div>
+          <div class="mt-5 has-text-centered">
+            <button class="button is-primary w-100">Sign Up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer has-background-dark py-5">
+      <div class="content has-text-centered">
+        <p class="has-text-white">Copyright 2020 Coffee Ninja</p>
+      </div>
+    </footer>
 
     <script
       defer
